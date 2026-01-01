@@ -72,9 +72,10 @@ Online help URL is http://www.alteraction.com/auxiliars/help.htm
 
 Stores preferences, config, and progress/decisions in a local directory `Prefs` to the `masq67.exe`:
 
-    Xrecord.txt
-    Xvl.txt
-    Xvlesp.txt
+    Xrecord.txt - zero length?
+    Xvl.txt - game state?
+    Xvlesp.txt - game state?
+    XAlterid.txt  - user name and password
 
 
 ### Network
