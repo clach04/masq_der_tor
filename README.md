@@ -70,7 +70,7 @@ After connecting the client displays a license agreement screen with:
   * messagetext.more
   * messagetext.license
 
-Online help URL is http://www.alteraction.com/auxiliars/help.htm
+Online help URL is http://www.alteraction.com/auxiliars/help.htm (45 bytes).
 
 ### Client Binary
 
