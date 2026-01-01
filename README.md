@@ -60,6 +60,9 @@ URL endpoints are all over http (not https):
 
   * http://alteraction.com/cgi-bin/
       * NOTE **not** www.alteraction.com
+      * domain name "alteraction.com" is 15 bytes. E.g. "http://123456789012345/cgi-bin/"
+      * could potentially have 21 byte domain with modified url of /x/. E.g. "http://123456789012345678901/x/"
+      * shorter is possible, as long as memory in client binary is zero'd out with NUL
 
 After connecting the client displays a license agreement screen with:
 
