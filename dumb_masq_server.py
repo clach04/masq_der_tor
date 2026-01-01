@@ -212,7 +212,34 @@ def simple_app(environ, start_response):
             result = [to_bytes('["messageid": "success" ]')]  # yield to_bytes('...')
         else:  #  elif request_body.startswith(b'cgimethod=checkmessages'):
             # NOTE this results in blank number of lives
-            result = [to_bytes('["messagetext": ["cost": "this is cost", "more": "this is more", "license": "this is license", "emailtext": "this is emailtext", "optionmessage": "this is option", "firstendmessage": "firstend", "nextendmessage": "nextend", "return": "return", "ZStartAgain2": "zstart", "privacypolicy": "my privacy policy", "emailrequired": "email required", "messageid": "success", "hijack": "hijack", "flag": "flag", "RegisterDriven": "RegisterDriven", "VIPpassword": "VIPpassword", "warnpages": "warnpages", "episodemessage": "episodemessage", "substract": "substract", "substractmessage": "substractmessage"]]')]  # yield to_bytes('...')
+            game_state = {
+                "messagetext": {
+                    "cost": "this is cost",
+                    "more": "this is more",
+                    "license": "this is license",
+                    "emailtext": "this is emailtext",
+                    "optionmessage": "this is option",
+                    "firstendmessage": "firstend",
+                    "nextendmessage": "nextend",
+                    "return": "return",
+                    "ZStartAgain2": "zstart",
+                    "privacypolicy": "my privacy policy",
+                    "emailrequired": "email required",
+                    "messageid": "success",
+                    "hijack": "hijack",
+                    "flag": "flag",
+                    "RegisterDriven": "RegisterDriven",
+                    "VIPpassword": "VIPpassword",
+                    "warnpages": "warnpages",
+                    "episodemessage": "episodemessage",
+                    "substract": "substract",
+                    "substractmessage": "substractmessage"
+                }
+            }
+            #director_payload = '["messagetext": ["cost": "this is cost", "more": "this is more", "license": "this is license", "emailtext": "this is emailtext", "optionmessage": "this is option", "firstendmessage": "firstend", "nextendmessage": "nextend", "return": "return", "ZStartAgain2": "zstart", "privacypolicy": "my privacy policy", "emailrequired": "email required", "messageid": "success", "hijack": "hijack", "flag": "flag", "RegisterDriven": "RegisterDriven", "VIPpassword": "VIPpassword", "warnpages": "warnpages", "episodemessage": "episodemessage", "substract": "substract", "substractmessage": "substractmessage"]]'
+            director_payload = json.dumps(game_state).replace('{', '[').replace('}', ']')
+            #print(director_payload)
+            result = [to_bytes(director_payload)]  # yield to_bytes('...')
     elif path_info and path_info.startswith('/auxiliars/help.htm'):  # http://www.alteraction.com/auxiliars/help.htm
         headers = [('Content-type', 'text/html')]
         result = [to_bytes('TODO help - nothing useful at https://web.archive.org/web/20080401000000*/http://www.alteraction.com/auxiliars/help.htm')]
