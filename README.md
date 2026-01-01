@@ -2,6 +2,20 @@
 
 Server for Masq (2002) Shockwave PC game for defunct http://www.alteraction.com/
 
+## Current Status
+
+Can start to play, (choose I do not want to register) but resuming results in error:
+
+    Director Player Error
+
+    List expected for handler
+
+    #setaProp
+
+This can be cleared by deleting the `Prefs` directory (contents).
+
+    del Prefs\Xvl.txt Prefs\Xvlesp.txt Prefs\Xrecord.txt
+
 
 ## What is Masq?
 
