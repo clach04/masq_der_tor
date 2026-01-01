@@ -10,7 +10,7 @@ Can start to play, (choose I do not want to register) but resuming results in er
 
     List expected for handler
 
-    #setaProp
+    #append
 
 This can be cleared by deleting the `Prefs` directory (contents).
 

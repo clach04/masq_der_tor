@@ -234,7 +234,10 @@ def simple_app(environ, start_response):
                     "substract": "substract",
                     "substractmessage": "substractmessage"
                 },
+                # TODO make below variables
                 "ticketsleft": 40,  # lives / ticket count from Nov 18, 2007 - https://lemmasoft.renai.us/forums/viewtopic.php?p=38537&sid=838be0e78a7ffcc6c7dc40c277d9cf87#p38537
+                "userID": 1,
+                #"userName":
             }
             #director_payload = '["messagetext": ["cost": "this is cost", "more": "this is more", "license": "this is license", "emailtext": "this is emailtext", "optionmessage": "this is option", "firstendmessage": "firstend", "nextendmessage": "nextend", "return": "return", "ZStartAgain2": "zstart", "privacypolicy": "my privacy policy", "emailrequired": "email required", "messageid": "success", "hijack": "hijack", "flag": "flag", "RegisterDriven": "RegisterDriven", "VIPpassword": "VIPpassword", "warnpages": "warnpages", "episodemessage": "episodemessage", "substract": "substract", "substractmessage": "substractmessage"]]'
             director_payload = json.dumps(game_state).replace('{', '[').replace('}', ']')
