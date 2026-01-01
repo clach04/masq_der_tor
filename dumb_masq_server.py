@@ -211,7 +211,6 @@ def simple_app(environ, start_response):
         if request_body.startswith(b'cgimethod=checkcontinue'):
             result = [to_bytes('["messageid": "success" ]')]  # yield to_bytes('...')
         else:  #  elif request_body.startswith(b'cgimethod=checkmessages'):
-            # NOTE this results in blank number of lives
             game_state = {
                 "messagetext": {
                     "cost": "this is cost",
@@ -234,7 +233,8 @@ def simple_app(environ, start_response):
                     "episodemessage": "episodemessage",
                     "substract": "substract",
                     "substractmessage": "substractmessage"
-                }
+                },
+                "ticketsleft": 40,  # lives / ticket count from Nov 18, 2007 - https://lemmasoft.renai.us/forums/viewtopic.php?p=38537&sid=838be0e78a7ffcc6c7dc40c277d9cf87#p38537
             }
             #director_payload = '["messagetext": ["cost": "this is cost", "more": "this is more", "license": "this is license", "emailtext": "this is emailtext", "optionmessage": "this is option", "firstendmessage": "firstend", "nextendmessage": "nextend", "return": "return", "ZStartAgain2": "zstart", "privacypolicy": "my privacy policy", "emailrequired": "email required", "messageid": "success", "hijack": "hijack", "flag": "flag", "RegisterDriven": "RegisterDriven", "VIPpassword": "VIPpassword", "warnpages": "warnpages", "episodemessage": "episodemessage", "substract": "substract", "substractmessage": "substractmessage"]]'
             director_payload = json.dumps(game_state).replace('{', '[').replace('}', ']')
