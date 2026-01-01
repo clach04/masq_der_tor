@@ -88,3 +88,5 @@ Either update your DNS server to redirect or local hosts file.
 Add to end:
 
     127.0.0.1   alteraction.com
+
+Optionally add www.alteraction.com to avoid domain squatter issue when clicking help.
