@@ -5,9 +5,13 @@ Server for Masq (2002) Shockwave PC game for defunct http://www.alteraction.com/
 
 ## What is Masq?
 
+Masq (2002) by https://www.crunchbase.com/person/javier-maldonado-c62b
+
 Shockwave (not flash).
 
+  * https://www.mobygames.com/game/28320/masq/
   * https://www.igdb.com/games/masq
+  * http://alteraction-masq.blogspot.com/
   * https://www.destructoid.com/indie-nation-30-masq/
   * https://web.archive.org/web/20100205171425/http://www.computerandvideogames.com/article.php?id=175128
   * https://lemmasoft.renai.us/forums/viewtopic.php?p=38481
@@ -39,4 +43,34 @@ Main contributors; KoleckOLP, gamstat, and negativespinner
 
 URL endpoints are all over http (not https):
 
-  * http://www.alteraction.com/cgi-bin/
+  * http://alteraction.com/cgi-bin/
+      * NOTE **not** www.alteraction.com
+
+After connecting the client displays a license agreement screen with:
+
+  * messagetext.cost
+  * messagetext.more
+  * messagetext.license
+
+Online help URL is http://www.alteraction.com/auxiliars/help.htm
+
+### Client Binary
+
+Stores preferences, config, and progress/decisions in a local directory `Prefs` to the `masq67.exe`:
+
+    Xrecord.txt
+    Xvl.txt
+    Xvlesp.txt
+
+
+### Network
+
+Either update your DNS server to redirect or local hosts file.
+
+    /etc/hosts
+    %windir%\System32\drivers\etc\hosts
+    Often `C:\WINDOWS\System32\drivers\etc\hosts`.
+
+Add to end:
+
+    127.0.0.1   alteraction.com
