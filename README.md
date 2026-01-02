@@ -16,6 +16,16 @@ This can be cleared by deleting the `Prefs` directory (contents).
 
     del Prefs\Xvl.txt Prefs\Xvlesp.txt Prefs\Xrecord.txt
 
+Completing Episode One (1) results in hang with client showing:
+
+
+    End of Episode
+
+    Please wait...
+
+Last seen request:
+
+    b'cgipassword=tempPass7x8E9&username=&password=&userid=1&hdid=46214255&cgimethod=checkcontinue&episode=2&app=g1'
 
 ## What is Masq?
 
