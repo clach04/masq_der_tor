@@ -232,7 +232,7 @@ def simple_app(environ, start_response):
                     "VIPpassword": "VIPpassword",
                     "warnpages": "warnpages",
                     "episodemessage": "episodemessage",
-                    "substract": "substract",
+                    "substract": "substract",  # this is the message shown after episode 4, just as 5 starts' Episode 5 of 5 ... substract
                     "substractmessage": "substractmessage"
                 },
                 # TODO make below variables
