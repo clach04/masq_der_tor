@@ -76,7 +76,8 @@ Online help URL is http://www.alteraction.com/auxiliars/help.htm (45 bytes).
 
 Stores preferences, config, and progress/decisions in a local directory `Prefs` to the `masq67.exe`:
 
-    Xrecord.txt - zero length?
+    Xrecord.txt - starts zero length on game start. Might be list of answers in play through?
+    Xrecord2.txt - ony appears after (second) completion? Might be list of answers in play through?
     Xvl.txt - game state?
     Xvlesp.txt - game state?
     XAlterid.txt  - user name and password
