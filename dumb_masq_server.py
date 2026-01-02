@@ -212,6 +212,7 @@ def simple_app(environ, start_response):
             result = [to_bytes('["messageid": "success" ]')]  # yield to_bytes('...')
         else:  #  elif request_body.startswith(b'cgimethod=checkmessages'):
             game_state = {
+                "messageid": "success",  # needed to continue to next episode
                 "messagetext": {
                     "cost": "this is cost",
                     "more": "this is more",

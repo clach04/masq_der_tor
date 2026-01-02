@@ -4,7 +4,7 @@ Server for Masq (2002) Shockwave PC game for defunct http://www.alteraction.com/
 
 ## Current Status
 
-Can start to play, (choose I do not want to register) but resuming results in error:
+Can start to play, (choose I do not want to register) but resuming (after not really starting the game) results in error:
 
     Director Player Error
 
@@ -15,17 +15,6 @@ Can start to play, (choose I do not want to register) but resuming results in er
 This can be cleared by deleting the `Prefs` directory (contents).
 
     del Prefs\Xvl.txt Prefs\Xvlesp.txt Prefs\Xrecord.txt
-
-Completing Episode One (1) results in hang with client showing:
-
-
-    End of Episode
-
-    Please wait...
-
-Last seen request:
-
-    b'cgipassword=tempPass7x8E9&username=&password=&userid=1&hdid=46214255&cgimethod=checkcontinue&episode=2&app=g1'
 
 ## What is Masq?
 
