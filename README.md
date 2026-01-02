@@ -86,6 +86,7 @@ Stores preferences, config, and progress/decisions in a local directory `Prefs` 
 ### Network
 
 Either update your DNS server to redirect or local hosts file.
+Alternatively see https://github.com/KoleckOLP/masq_server for in-memory patch of server URL, see https://github.com/KoleckOLP/masq_server/pull/2
 
     /etc/hosts
     %windir%\System32\drivers\etc\hosts
