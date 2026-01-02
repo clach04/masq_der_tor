@@ -35,6 +35,7 @@ Shockwave (not flash).
 
   * https://web.archive.org/web/20160606064916/http://www.alteraction.com/masq67.exe
     md5 checksum: 9770c6e29dd6cf2479943f3bb8491a61
+    size: 18,051,670 bytes
 
 ## Previous Work
 
